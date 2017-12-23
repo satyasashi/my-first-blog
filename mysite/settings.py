@@ -120,3 +120,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+# So that when the login page accessed directly it will redirect to 
+# the Top-level Index page '/' (Home page)
+LOGIN_REDIRECT_URL = '/'
